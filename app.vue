@@ -38,6 +38,26 @@ const slides = [
         <img :src="slide" />
       </SwiperSlide>
     </Swiper>
+
+    <p>
+      We can fix the swiping issue by adding Arrows (left/right). But we cannot fix the scrolling issue.
+    </p>
+
+    <div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+
+    <p>
+     FCB ROOM demo.
+    </p>
   </main>
 </template>
 
