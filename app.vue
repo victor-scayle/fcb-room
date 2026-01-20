@@ -43,6 +43,31 @@ const slides = [
       We can fix the swiping issue by adding Arrows (left/right). But we cannot fix the scrolling issue.
     </p>
 
+
+    <h2>Gallery with Arrows</h2>
+
+
+    <Swiper
+      :keyboard="true"
+      :css-mode="true"
+      :lazy-preload-prev-next="2"
+      :pagination="{ enabled: true, clickable: true }"
+      :modules="[Pagination, Keyboard, Navigation]"
+    >
+      <SwiperSlide>
+        <iframe
+          src="https://viewer.rooom.com/product/6e4b03fd05271278164ced0680b777?autostart=1"
+          allowfullscreen
+          :mozallowfullscreen="true"
+          :webkitallowfullscreen="true"
+        ></iframe>
+      </SwiperSlide>
+
+      <SwiperSlide v-for="slide in slides" :key="`slide-${slide}`">
+        <img :src="slide" />
+      </SwiperSlide>
+    </Swiper>
+
     <div>
       <br />
       <br />
