@@ -52,6 +52,7 @@ const slides = [
       :css-mode="true"
       :lazy-preload-prev-next="2"
       :pagination="{ enabled: true, clickable: true }"
+      :navigation="true"
       :modules="[Pagination, Keyboard, Navigation]"
     >
       <SwiperSlide>
